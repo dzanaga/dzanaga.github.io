@@ -1,10 +1,9 @@
 ---
 layout: post
-title: "Daniele Zanaga, Horrible Person, Launches Site"
+title: "A first website"
 date: 2017-02-20
 ---
 
-Well. Finally got around to putting this old website together. 
-Neat thing about it - powered by [Jekyll](http://jekyllrb.com) 
-and I can use Markdown to author my posts. It actually is a lot easier than I thought it was going to be.
-Credit to http://jmcglone.com/guides/github-pages/
+This was the first version of my personal website: a small experiment in putting ideas and notes somewhere on the web.
+
+It was powered by [Jekyll](https://jekyllrb.com/) and written in Markdown — a simple setup that made publishing feel much easier than expected.

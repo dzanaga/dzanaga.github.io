@@ -1,5 +1,5 @@
-name: Daniele Zanaga, Horrible Person
+title: Daniele Zanaga
+description: Physicist, data researcher, and curious observer working across science, images, and the living planet.
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
-
-theme: jekyll-theme-architect
+permalink: /blog/:year/:month/:day/:title/
+timezone: Europe/Brussels

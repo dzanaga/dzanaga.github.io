@@ -1,32 +1,38 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>{{ page.title }}</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css"
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		        	
-			{{ content }}
-			
-    		</div><!-- /.container -->
-    
-    		
-    
-		<footer>
-    		<ul>
-        		<li><a href="mailto:gugout@gmail.com">email</a></li>
-        		<li><a href="https://github.com/dzanaga">github.com/dzanaga</a></li>
-			</ul>
-		</footer>
-	</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090d18" />
+    <meta name="description" content="{{ page.description | default: site.description }}" />
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml" />
+    <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}" />
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="Daniele Zanaga home">
+          <span class="brand-mark">DZ</span>
+          <span>Daniele<span class="brand-dot">.</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="{{ '/' | relative_url }}#bio">Bio</a>
+          <a href="{{ '/' | relative_url }}#blog">Blog</a>
+          <a href="{{ '/' | relative_url }}#contacts">Contacts</a>
+        </nav>
+        <a class="header-signal" href="https://github.com/dzanaga" target="_blank" rel="noreferrer">
+          <span class="signal-dot" aria-hidden="true"></span> online
+        </a>
+      </header>
+      <main>{{ content }}</main>
+      <footer class="site-footer">
+        <span>© {{ 'now' | date: '%Y' }} Daniele Zanaga</span>
+        <span class="footer-note">From atoms to landscapes.</span>
+        <a href="{{ '/' | relative_url }}#home">Back to top ↑</a>
+      </footer>
+    </div>
+  </body>
 </html>
