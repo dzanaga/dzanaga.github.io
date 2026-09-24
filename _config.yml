@@ -1,5 +1,24 @@
 title: Daniele Zanaga
-description: Physicist, data researcher, and curious observer working across science, images, and the living planet.
+description: Physicist and data researcher working with satellite imagery, land-cover mapping, and computer vision.
+author:
+  name: Daniele Zanaga
+
+remote_theme: jekyll/minima@1e8a445
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/
 timezone: Europe/Brussels
+
+minima:
+  skin: dark
+  nav_pages:
+    - index.md
+    - blog.md
+    - bio.md
+  date_format: "%b %-d, %Y"
+  hide_site_feed_link: true
